@@ -1,0 +1,33 @@
+.product_carousel{
+    position: relative;
+    overflow: hidden;
+    padding: 1rem ;
+    width: 90vw;
+    margin: 0 auto;
+}
+.product_container{
+    display: flex;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    display: flex;
+    padding:1rem 0;
+}
+
+.prevbtn,.nextbtn{
+    position: absolute;
+    height:100%;
+    border:none;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.nextbtn{
+  right:0;
+}
+.product_carousel span{
+    color: #000;
+    font-size: 5rem;
+    font-weight: 200;
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+.product{
+    margin-top:8rem ;
+}
+.productDetails{
+    width: 80%;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: row;
+}
+.productDetails .carousel{
+    flex:1;
+}
+.productDetails .product_details_section{
+    flex:1;
+}
+.productDetails .product_name{
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.productDetails .product_category{
+    font-size: 1.2rem;
+    color: #1b1b1b;
+    margin: 1rem 0;
+}
+.productDetails .product_price{
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: rgb(111,211, 146);
+    margin:1rem 0;
+}
+.productDetails .product_description{
+    font-size: 14px;
+}
+.productDetails .btn_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:2rem 0;
+}
+.productDetails .btn_group .product_edit_btn{
+    border:1px solid rgb(111,211, 146) ;
+    background: rgb(111,211, 146);
+    color:white;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    padding:.5rem 2rem;
+    border-radius: 10px;
+    margin:0 1rem 0 0;
+    cursor: pointer;
+}
+.productDetails .btn_group .product_remove_items{
+    border:1px solid #ff3434 ;
+    background: #ff3434;
+    color:white;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    padding:.5rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}

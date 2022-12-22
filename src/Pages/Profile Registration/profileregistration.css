@@ -1,0 +1,131 @@
+
+form{
+display: flex;
+flex-direction: row;
+width:80%;
+margin:2rem auto;
+justify-content: center;
+}
+.title{
+    margin:3rem 0 0rem 0;
+    color:rgb(111, 211, 146);
+}
+.media_section{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.media_section .profile_image_container{
+    width:10rem;
+    overflow: hidden;
+    height:10rem;
+    border-radius:50%;
+    border: 2px solid rgb(111, 211, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media_section .img_upload{
+    margin-top:2rem;
+    position: relative;
+    width: max-content;
+    margin-bottom: 10rem;
+}
+.media_section .img_upload img{
+    background-size: cover;
+    height: 100%;
+}
+.media_section .img_upload .img_add_btn{
+    color:rgb(111, 211, 146);
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+    background:#fff;
+    z-index: 2;
+    right:2px;
+    bottom:8px;
+    position: absolute;
+}
+.media_section .img_upload .img_add_btn input[type="file"] {
+    padding:5px;
+    width:30px;
+    bottom:5px;
+    left: 5px;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+}
+.certificate_section label{
+    padding: 10px;
+    display: table;
+    margin: 1rem 0;
+    border:1px solid rgb(111,211, 146);
+    border-radius: 10px;
+    font-size: 14px;
+    padding:.4rem 2rem; 
+    cursor: s;
+     }
+
+.certificate_section input[type="file"] {
+    display: none;
+}
+.registration input{
+    border:1px solid rgb(190, 190, 190);
+    outline:none;
+    border-radius:5px;
+    padding:.6rem 2.5rem .6rem .6rem;
+    margin:1rem 2rem 0 0;
+}
+.name_input{
+    display: flex;
+}
+.name_input input{
+    flex:1;
+}
+.address_input_r{
+    display: flex;
+}
+.address_input_r input{
+    flex:1;
+}
+.aadhar_group input{
+    width:90%;
+}
+.detail_section{
+    flex:3;
+}
+.contact_input{
+    display: flex;
+}
+.contact_input input{
+    flex: 1;
+
+}
+.register_button{
+width:100%;
+display: flex;
+justify-content: space-between;
+margin-top:1rem;
+}
+.register_button .submit_btn{
+ margin: 2rem;
+ border:1px solid rgb(111,211, 146);
+ background-color:rgb(111,211, 146);
+ color:#fff;
+ border-radius: 10px;
+ padding:.6rem 1rem;
+ cursor: pointer;
+
+}
+.register_button .cancel_btn{
+    margin: 2rem 0;
+    border:1px solid rgb(111,211, 146);
+    color:rgb(111, 211, 146);;
+    border-radius: 10px;
+    padding:.6rem 1rem;  
+    cursor: pointer;
+
+}

@@ -1,0 +1,49 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem 1rem;
+}
+.card .image{
+    position: relative;
+    width:18rem;
+    height: fit-content;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+}
+.card .image:hover .image_btn{
+    display: flex;
+    opacity: 1;
+}
+.card .image_btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+.card .image_btn a{
+    margin: 0 .4rem;
+    font-size:1.4rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: grid;
+    text-align: center;
+    padding: 0.8rem;
+}
+.card img{
+    width: 8rem;
+    height: 12rem;
+}
+.product_info .seller_name{
+font-style: italic;
+}
+.product_info .price{
+    margin: .5rem 0;
+    
+}

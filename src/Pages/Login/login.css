@@ -1,0 +1,157 @@
+.auth_section{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5.3rem auto 0 auto;
+  background:linear-gradient(rgba(255, 255, 255, 0.4),rgba(255, 255, 255, 0.4)),url('../../assets/auth-back.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.auth_section .auth_img{
+  flex: 1;
+}
+
+.auth_section .auth_details{
+  flex:1;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+}
+.auth_details .auth_form{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+align-items: center;
+background:rgba(0, 0, 0, 0.08);
+padding: 4rem 2rem;
+min-width:10rem;
+border-radius: 10px;
+width: 20rem;
+}
+.auth_details .auth_heading{
+  font-size:2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom:1rem;
+}
+
+.auth_details .auth_button{
+  background-color:rgb(39, 154, 64);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  color:#fff;
+  padding: .6rem 2rem;
+  border-radius:20px;
+  min-width: 6rem;
+  margin-bottom:2rem;
+  text-align:center;
+  cursor: pointer;
+  text-transform:uppercase;
+}
+.group 			  { 
+  position:relative; 
+  margin-bottom:5px;
+  margin-top: 2rem; 
+}
+.group input 				{
+  font-size:14px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:235px;
+  border:none;
+  background:transparent;
+  border-bottom:1px solid #757575;
+  border-radius:0;
+  margin: 0 auto;
+}
+.group input:focus 		{ outline:none; }
+
+/* LABEL ======================================= */
+.group label 				 {
+  color:rgb(36, 35, 35); 
+  font-size:14px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.group input:focus ~ label, input:valid ~ label 		{
+  top:-20px;
+  font-size:10px;
+  color:#000;
+}
+
+/* BOTTOM BARS ================================= */
+.bar 	{ position:relative; display:block; width:250px; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#000; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+	from { background:#000; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#000; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#000; }
+  to 	{ width:0; background:transparent; }
+}
+@media screen and (max-width:800px) {
+  .auth_section{
+   flex-direction: column;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+  }
+}
